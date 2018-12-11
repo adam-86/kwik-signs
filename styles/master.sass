@@ -1,0 +1,455 @@
+body
+  overflow-x: hidden
+  // font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+  font-family: 'Montserrat' !important
+
+p
+  line-height: 1.75
+
+a
+  color: #E25D49
+  &:hover
+    color: #ff725d
+
+.text-primary
+  color: #E25D49 !important
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 700
+  font-family: 'Montserrat'
+
+section
+  padding: 40px 0
+  h2.section-heading
+    font-size: 40px
+    margin-top: 0
+    margin-bottom: 60px
+    color: #4D4D4D
+  h3.section-subheading
+    font-size: 16px
+    font-weight: 400
+    font-style: italic
+    margin-bottom: 75px
+    text-transform: none
+
+
+@media (min-width: 768px)
+  section
+    padding: 60px 0
+
+.btn
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+  font-weight: 700
+
+.btn-xl
+  font-size: 18px
+  padding: 20px 40px
+
+.btn-primary
+  background-color: #E25D49
+  border-color: #E25D49
+  &:active, &:focus, &:hover
+    background-color: #b14e40 !important
+
+    color: white
+  &:active, &:focus
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important
+
+\::-moz-selection, ::selection
+  background: #E25D49
+  text-shadow: none
+
+img
+  &::-moz-selection, &::selection, &::-moz-selection
+    background: transparent
+
+#mainNav
+  background-color: rgba(#212529, .90)
+  .navbar-toggler
+    font-size: 14px
+    right: 0
+    padding: 13px
+    color: white
+    border: 0
+    background-color: #E25D49
+
+    // font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+  .navbar-brand
+    // color: #E25D49
+    // font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+    &.active, &:active, &:focus, &:hover
+      color: #fec503
+    svg
+      height: 65px
+  .navbar-nav .nav-item .nav-link
+    font-weight: 400
+    padding: 0.75em 0
+    letter-spacing: 1px
+    color: white
+    &.active, &:hover
+      color: #E25D49
+
+@media (min-width: 992px)
+  #mainNav
+    padding-top: 25px
+    padding-bottom: 25px
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s
+    transition: padding-top 0.3s, padding-bottom 0.3s
+    border: none
+    background-color: transparent
+    transition: all .3s
+    .navbar-brand
+      font-size: 1.75em
+      -webkit-transition: all 0.3s
+      transition: all 0.3s
+      &:hover
+        transform: scale(1.05)
+    .navbar-nav .nav-item .nav-link
+      padding: 1.1em 1em !important
+    &.navbar-shrink
+      padding-top: 0
+      padding-bottom: 0
+      background-color: rgba(#000, .81)
+      transition: all .5s
+      .navbar-brand
+        font-size: 1.25em
+        padding: 12px 0
+
+header.masthead
+  color: white
+  background-image: url("../img/kwik-bg.jpg")
+  background-repeat: no-repeat
+  background-attachment: scroll
+  background-position: center center
+  background-size: cover
+  height: 100vh !important
+  .container
+    @media(min-width: 1200px)
+      min-width: 1100px
+
+  .intro-text
+    padding-top: 250px
+    padding-bottom: 100px
+    @media (max-height: 550px)
+      padding-top: 120px !important
+      padding-bottom: 0 !important
+    .intro-lead-in
+      font-size: 22px
+      font-style: italic
+      line-height: 22px
+      margin-bottom: 25px
+    .intro-heading
+      font-size: 13vw
+      font-weight: bold !important
+      line-height: 50px
+      margin-bottom: 25px
+      font-family: 'Montserrat'
+      @media (max-width: 768px)
+          text-align: center
+          font-size: 10vw
+
+    .sub-heading
+      font-size: 3vw
+      @media (max-width: 750px)
+        font-size: 3.5vw
+        text-align: center
+    #quote-button
+      @media (max-width: 750px)
+        width: 50%
+        margin-left: 25%
+        font-size: 3vw
+
+@media (min-width: 768px)
+  header.masthead .intro-text
+    padding-top: 300px
+    padding-bottom: 200px
+    .intro-lead-in
+      font-size: 40px
+      font-style: italic
+      line-height: 40px
+      margin-bottom: 25px
+      // font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+    .intro-heading
+      font-size: 100px
+      font-weight: bold
+      line-height: 75px
+      margin-bottom: 50px
+      text-align: left !important
+    .sub-heading
+      font-size: 21px
+      text-align: left !important
+
+.service-heading
+  margin: 15px
+  padding-top: 20px !important
+  text-transform: none
+  font-weight: bold
+  color: #4D4D4D
+
+.grid-item
+  transition: all .5s
+  &:hover
+    transform: scale(1.05)
+  img
+    box-shadow: 1px 1px 10px #656565
+
+.services-card
+  transition: all .5s
+  &:hover
+    transform: scale(1.05)
+
+#work
+  .grid-item
+    margin-bottom: 50px
+
+#services, #work, .gallery
+  .grid-item
+    right: 0
+    margin-bottom: 50px
+    .grid-item-link
+      position: relative
+      display: block
+      max-width: 400px
+      margin: 0 auto
+      cursor: pointer
+      .grid-hover
+        position: absolute
+        width: 100%
+        height: 100%
+        -webkit-transition: all ease 0.5s
+        transition: all ease 0.5s
+        opacity: 0
+        background: rgba(#e25d49,.91)
+        &:hover
+          opacity: 1
+        .grid-hover-content
+          font-size: 20px
+          position: absolute
+          top: 50%
+          width: 100%
+          height: 20px
+          margin-top: -12px
+          text-align: center
+          color: white
+          i
+            margin-top: -12px
+          h3, h4
+            margin: 0
+    .services-caption
+      max-width: 400px
+      margin: 0 auto
+      padding: 25px
+      text-align: center
+      background-color: #fff
+      h4
+        margin: 0
+        text-transform: none
+      p
+        font-size: 16px
+        font-style: italic
+        margin: 0
+  *
+    z-index: 2
+
+@media (min-width: 767px)
+  #services .grid-item
+    margin: 0 0 30px
+
+.services-modal
+  padding-right: 0px !important
+  .modal-dialog
+    margin: 1rem
+    max-width: 100vw
+  .modal-content
+    padding: 100px 0
+    text-align: center
+    h2
+      font-size: 3em
+      margin-bottom: 15px
+      @media (min-width: 767px)
+        font-size: 2em
+
+    p
+      margin-bottom: 30px
+      &.item-intro
+        font-size: 16px
+        font-style: italic
+        margin: 20px 0 30px
+        // font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+    ul.list-inline
+      margin-top: 0
+      margin-bottom: 30px
+    img
+      margin-bottom: 30px
+    button
+      cursor: pointer
+  .close-modal
+    position: absolute
+    top: 25px
+    right: 25px
+    width: 75px
+    height: 75px
+    cursor: pointer
+    background-color: transparent
+    &:hover
+      opacity: 0.3
+    .lr
+      z-index: 1051
+      width: 1px
+      height: 75px
+      margin-left: 35px
+      -webkit-transform: rotate(45deg)
+      transform: rotate(45deg)
+      background-color: #212529
+      .rl
+        z-index: 1052
+        width: 1px
+        height: 75px
+        -webkit-transform: rotate(90deg)
+        transform: rotate(90deg)
+        background-color: #212529
+
+section#contact
+  background-color: #212529
+  background-image: url("../img/map-image.png")
+  background-repeat: no-repeat
+  background-position: center
+  .section-heading
+    color: #fff
+  .form-group
+    margin-bottom: 25px
+    input, textarea
+      padding: 20px
+    input.form-control
+      height: auto
+    textarea.form-control
+      height: 248px
+  .form-control:focus
+    border-color: #E25D49
+    -webkit-box-shadow: none
+    box-shadow: none
+  \::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder
+    font-weight: 700
+    color: #ced4d
+  .section-heading-sm
+    color: white
+    padding-bottom: 60px
+
+ul.social-buttons
+  margin-bottom: 0
+  li a
+    font-size: 20px
+    line-height: 50px
+    display: block
+    width: 50px
+    height: 50px
+    -webkit-transition: all 0.3s
+    transition: all 0.3s
+    color: white
+    border-radius: 100%
+    outline: none
+    background-color: #212529
+    &:active, &:focus, &:hover
+      background-color: #E25D49
+
+.btn-xl
+  font-weight: 300 !important
+footer
+  background-color: #212529
+
+
+.road-runner-caption
+  color: white !important
+  float: right
+  font-style: underline
+  border-bottom: 1px solid white
+
+  line-height: 13px
+
+footer .road-runner-logo
+  width: 75%
+  max-width: 200px
+
+footer .kwik-logo
+  position: absolute
+  height: 100px
+  left: 36%
+  top: 15%
+
+
+footer
+  background-color: black
+  color: white !important
+  @media (max-width: 768px)
+    .kwik-logo
+      display: none
+
+footer .list-unstyled
+  p
+    margin: .5px
+
+//// **************** Gallery Page Styles *************** ////
+
+.gallery-body
+  min-height: 100vh
+  .masthead
+    position: relative
+    // background-color: #575757
+
+  .gallery-masthead
+    background-image: url("../img/gallery-bg.jpeg")
+    background-size: cover
+    background-repeat: no-repeat
+    .gallery-heading
+      font-size: 100px
+      font-weight: bold !important
+      line-height: 50px
+      margin-bottom: 25px
+
+      font-family: 'Montserrat'
+      @media (max-width: 768px)
+          text-align: center
+          font-size: 13vw
+
+  #gallery
+    top: 300px
+    width: 100%
+    margin: auto
+  h2
+    text-align: center
+    margin-bottom: 60px
+    font-size: 40px
+    color: #4D4D4D
+  .gallery-hover
+    position: absolute
+    width: 100%
+    height: 100%
+    -webkit-transition: all ease 0.5s
+    transition: all ease 0.5s
+    opacity: 0
+    &:hover
+      opacity: 1
+
+  .grid-item
+    padding-bottom: 2%
+    overflow: hidden
+    &:hover
+      filter: greyscale(50%)
+      color: white
+    img
+      width: 100%
+      height: auto
+.grid-item
+  background-size: fill
+
+.grid-item-link
+  opacity: 1
+  animation: fades-in .5s ease-out
+
+
+@keyframes fades-in
+  from
+    opacity: 0
+  todo
+    opacity: 1
